@@ -1,3 +1,81 @@
-.App {
+.table {
   text-align: center;
+}
+
+.tableStyle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rowStyle {
+  line-height: 2;
+}
+
+.form-input {
+  width: 250px;
+  height: 25px;
+  border-radius:5px;
+  border: 1px solid gray;
+  -webkit-appearance: none;
+}
+
+.redOutLine {
+  outline:solid 1px red;
+  border: 1px
+}
+
+.zipStyle {
+  width: 130px;
+  height: 25px;
+  border-radius:5px;
+}
+
+.leftCell {
+  width: 150px;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.rightCell {
+  width: 300px;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.selectStyle {
+  width: 258px;
+  height: 30px;
+  border-radius:5px;
+}
+
+.buttonWrapper{
+  text-align: center;
+}
+
+.button {
+  margin-top: 30px;
+  background-color: rgb(54, 236, 54);
+  color: aliceblue;
+  width: 90px;
+  height: 35px;
+  border-radius:10px;
+  border: 0;
+  &:disabled {
+    background-color: rgb(166, 235, 166);
+  }
+}
+
+.errorleftCell {
+  width: 150px;
+  text-align: right;
+}
+
+.errorRightCell {
+  width: 300px;
+  text-align: left;
+}
+
+.errorMessage{
+  color: red;
+  font-size: 10px;
 }
