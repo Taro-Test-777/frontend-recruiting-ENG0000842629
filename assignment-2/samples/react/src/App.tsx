@@ -59,6 +59,7 @@ function App() {
                 <input
                   className="form-input"
                   id="name"
+                  placeholder="(例)トレタ太郎"
                   type="text"
                   { ...register('name', { required: true }) }
                 />
@@ -72,6 +73,7 @@ function App() {
                   className={classNames("form-input", {"redOutLine": !!errors.email?.message})}
                   id="email"
                   type="text"
+                  placeholder="(例)yoyaku@toreta.in"
                   {...register("email", {
                     required: true,
                   pattern: {
@@ -98,6 +100,7 @@ function App() {
                   className={classNames("zipStyle", {"redOutLine": !!errors.zip?.message})}
                   id="zip"
                   type="text"
+                  placeholder="(例)0000000"
                   {...register("zip", {
                     required: true,
                     pattern: {
@@ -137,6 +140,7 @@ function App() {
                   className="form-input"
                   id="address1"
                   type="text"
+                  placeholder="(例)品川区西五反田7丁目22-17"
                   { ...register('address1', { required: true }) }
                 />
               </td>
@@ -149,6 +153,7 @@ function App() {
                   className="form-input"
                   id="address2"
                   type="text"
+                  placeholder="(例)TOCビル8F"
                   {...register("address2")}
                 />
               </td>
