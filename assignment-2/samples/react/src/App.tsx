@@ -123,7 +123,7 @@ function App() {
           <tr className="rowStyle">         
               <td className="leftCell">都道府県</td>
               <td className="rightCell">
-                <select id="prefecture"  className="selectStyle" {...register("prefecture")}>
+                <select id="prefecture"  className="selectStyle" {...register("prefecture", { required: true })}>
                   {options.map(option => (
                     <option value={option.value} key={option.value}>
                       {option.label}
